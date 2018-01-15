@@ -70,7 +70,7 @@ nav .nav-pills .nav-link.active {
         width: 56vh;
         height: 80vh;
         position: fixed;
-        top: 10vh;
+        top: 15vh;
         right: 10vw;
         background: url(../img/bob.png);
         background-size: contain;
@@ -117,7 +117,7 @@ nav .nav-pills .nav-link.active {
 
 /* Header */
 header {
-    padding-top: 40vh;
+    padding-top: 35vh;
     min-height: 100vh;
 }
 header h1 {

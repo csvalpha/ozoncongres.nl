@@ -11,6 +11,8 @@ $( window ).scroll(function() {
 
 $('nav a').click(function(event) {
     event.preventDefault();
+    $('.active').removeClass('active');
+    $(this).addClass('active');
     var el = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(el).offset().top
