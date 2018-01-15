@@ -1,0 +1,161 @@
+body {
+    background: url(../img/concrete-bg.jpg);
+    background-attachment: fixed;
+    color: white;
+}
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+h3, h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #FEC902;
+}
+h4 {
+    font-size: 1.2em;
+}
+p, ul {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.2em;
+}
+a {
+    color: white;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* Nav */
+nav {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+nav ul {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+nav ul li {
+    margin-right: 5px;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    background: #FEC902;
+    color: #070045;
+}
+nav .nav-pills .nav-link.active {
+    background: #070045;
+}
+
+
+/* Bob */
+@media screen and (min-width: 480px) {
+    #bob {
+        width: 56vh;
+        height: 80vh;
+        position: fixed;
+        top: 10vh;
+        right: 10vw;
+        background: url(../img/bob.png);
+        background-size: contain;
+        z-index: 1;
+    }
+    #bob-logo {
+        cursor: pointer;
+        width: 200px;
+        height: 128px;
+        position: fixed;
+        bottom: 50px;
+        left: 50px;
+        background: url(../img/bob-brouwer.jpg);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 480px) {
+    #bob-logo {
+        width: 100px;
+        height: 64px;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: url(../img/bob-brouwer.jpg);
+        background-size: contain;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        z-index: 1;
+    }
+}
+
+/* Blauwe strook */
+.row.stroke {
+    padding: 50px 0 30px;
+    background-color: #070045;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+.row.stroke.inverted {
+    background-color: #FEC902;
+}
+.row.stroke.inverted h3, .row.stroke.inverted p, .row.stroke.inverted h4, .row.stroke.inverted ul {
+    color: #070045;
+}
+
+/* Header */
+header {
+    padding-top: 40vh;
+    min-height: 100vh;
+}
+header h1 {
+    color: #FEC902;
+    text-align: center;
+}
+header h2 {
+    text-align: center;
+}
+
+/* Themparesentatie */
+section#thema {
+    padding-top: 20vh;
+}
+
+/* Over ons */
+section#over {
+    padding-top: 20vh;
+}
+
+/* Programma */
+section#programma {
+    padding-top: 20vh
+}
+section#programma h3 {
+    padding-bottom: 20px;
+}
+section#programma ul {
+    list-style-type: circle;
+}
+
+/* Inschrijving */
+section#inschrijving {
+    padding-top: 20vh;
+}
+
+/* Contact */
+section#contact {
+    padding-top: 20vh;
+    padding-bottom: 40vh;
+}
