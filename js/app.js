@@ -15,7 +15,7 @@ $('nav a').click(function(event) {
     $(this).addClass('active');
     var el = $(this).attr('href');
     $('html, body').animate({
-        scrollTop: $(el).offset().top
+        scrollTop: $(el).offset().top + 5
     }, 800);
 });
 
