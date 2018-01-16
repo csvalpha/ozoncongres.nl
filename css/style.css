@@ -4,11 +4,6 @@ body {
     background-attachment: fixed;
     color: white;
 }
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-}
 h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
@@ -123,6 +118,9 @@ nav .navbar-nav .nav-link {
     }
 }
 @media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
     #bob-logo {
         width: 100px;
         height: 64px;
