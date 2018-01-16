@@ -94,7 +94,7 @@ nav .navbar-nav .nav-link {
 }
 
 /* Bob */
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 740px) {
     #bob {
         width: 56vh;
         height: 80vh;
@@ -117,7 +117,7 @@ nav .navbar-nav .nav-link {
         z-index: 1;
     }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 740px) {
     body {
         font-size: 12px;
     }
