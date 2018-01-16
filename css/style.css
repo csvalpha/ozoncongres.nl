@@ -30,10 +30,25 @@ p, ul {
 }
 a {
     color: white;
-    text-decoration: underline;
 }
 a:hover {
+    color: #FEC902;
     text-decoration: none;
+}
+a.btn {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-decoration: none;
+}
+a.btn-warning {
+    background: #FEC902;
+    color: #070045;
+}
+a.btn-warning:hover {
+    background: #070045;
+    color: #FEC902;
 }
 
 /* Nav */
