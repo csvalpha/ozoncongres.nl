@@ -3,6 +3,11 @@ body {
     background-attachment: fixed;
     color: white;
 }
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+}
 h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
@@ -52,7 +57,7 @@ a.btn-warning:hover {
 }
 
 /* Nav */
-nav {
+nav.navbar.navbar-expand-lg {
     position: fixed;
     top: 30px;
     left: 30px;
