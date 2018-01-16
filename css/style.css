@@ -95,16 +95,16 @@ nav .navbar-nav .nav-link {
 
 /* Bob */
 @media screen and (min-width: 480px) {
-    /*#bob {*/
-        /*width: 56vh;*/
-        /*height: 80vh;*/
-        /*position: fixed;*/
-        /*top: 15vh;*/
-        /*right: 10vw;*/
-        /*background: url(../img/bob.png);*/
-        /*background-size: contain;*/
-        /*z-index: 1;*/
-    /*}*/
+    #bob {
+        width: 56vh;
+        height: 80vh;
+        position: fixed;
+        top: 15vh;
+        right: 10vw;
+        background: url(../img/bob.png);
+        background-size: contain;
+        z-index: 1;
+    }
     #bob-logo {
         cursor: pointer;
         width: 200px;
