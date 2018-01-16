@@ -1,9 +1,10 @@
+/* General and typography */
 body {
     background: url(../img/concrete-bg.jpg);
     background-attachment: fixed;
     color: white;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     body {
         font-size: 12px;
     }
@@ -40,6 +41,8 @@ a:hover {
     color: #FEC902;
     text-decoration: none;
 }
+
+/* Buttons */
 a.btn {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
@@ -57,11 +60,20 @@ a.btn-warning:hover {
 }
 
 /* Nav */
+nav.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+nav.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
 nav.navbar.navbar-expand-lg {
+    background-color: rgba(7,0,69,0.6);
     position: fixed;
     top: 30px;
     left: 30px;
     z-index: 1;
+    border-radius: 5px;
 }
 nav ul {
     font-family: 'Josefin Sans', sans-serif;
@@ -82,7 +94,9 @@ nav a:hover {
 nav .nav-pills .nav-link.active {
     background: #070045;
 }
-
+nav .navbar-nav .nav-link {
+    padding-left: 10px;
+}
 
 /* Bob */
 @media screen and (min-width: 480px) {
