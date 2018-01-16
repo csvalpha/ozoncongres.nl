@@ -162,17 +162,17 @@ header h2 {
 
 /* Themparesentatie */
 section#thema {
-    padding-top: 20vh;
+    padding-top: 15vh;
 }
 
 /* Over ons */
 section#over {
-    padding-top: 20vh;
+    padding-top: 15vh;
 }
 
 /* Programma */
 section#programma {
-    padding-top: 20vh
+    padding-top: 15vh
 }
 section#programma h3 {
     padding-bottom: 20px;
@@ -183,11 +183,11 @@ section#programma ul {
 
 /* Inschrijving */
 section#inschrijving {
-    padding-top: 20vh;
+    padding-top: 15vh;
 }
 
 /* Contact */
 section#contact {
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-bottom: 40vh;
 }
