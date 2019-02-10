@@ -19,7 +19,8 @@ body {
   color: #526252; }
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 p, ul, ol {
   font-size: 20px; }
@@ -33,6 +34,13 @@ p, ul, ol {
   .button:hover {
     background-color: #526252;
     color: #ffffff; }
+
+.aside-components {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .aside-components .aside-component {
+    width: 30%; }
 
 nav {
   position: fixed;
@@ -110,6 +118,11 @@ main .aside-enroll {
   main .aside-enroll .button {
     float: right;
     font-size: 25px; }
+main .aside-program ul {
+  list-style: none;
+  padding: 0; }
+main .aside-workshops .aside-component h3 {
+  color: #526252; }
 main .aside-association, main .aside-address {
   text-align: center;
   margin-bottom: 0; }
