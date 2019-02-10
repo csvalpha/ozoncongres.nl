@@ -6,6 +6,18 @@ header
   overflow: hidden
   position: relative
 
+  +breakpoint(tablet)
+    margin-top: 64px
+    height: calc(100vh - 64px)
+
+  +breakpoint(mobile)
+    margin-top: 48px
+    height: calc(70vh - 48px)
+
+  +breakpoint(narrow)
+    margin-top: 48px
+    height: calc(60vh - 48px)
+
   .header-bold-row
     height: 100%
     width: 300vh
@@ -19,12 +31,18 @@ header
       height: 100%
       display: inline-block
 
+      +breakpoint(small)
+        max-width: 120vw
+
       &.header-center
         fill: $color-secondary
 
       &.header-left, &.header-right
         fill: $color-secondary-transparant
         margin: 0 -50px
+
+        +breakpoint(mobile)
+          display: none
 
   .header-overlay-row
     position: absolute

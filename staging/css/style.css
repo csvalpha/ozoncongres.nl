@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 p, ul, ol {
   font-size: 20px; }
 
+article, aside {
+  max-width: 900px;
+  margin: 0 auto 15px; }
+
 .button {
   border: none;
   padding: 5px 20px;
@@ -41,6 +45,12 @@ p, ul, ol {
   flex-wrap: wrap; }
   .aside-components .aside-component {
     width: 30%; }
+    @media screen and (max-width: 750px) {
+      .aside-components .aside-component {
+        width: 48%; } }
+    @media screen and (max-width: 500px) {
+      .aside-components .aside-component {
+        width: 100%; } }
 
 nav {
   position: fixed;
@@ -53,6 +63,14 @@ nav {
   padding: 25px;
   box-sizing: border-box;
   z-index: 100; }
+  @media screen and (max-width: 900px) {
+    nav {
+      font-size: 20px;
+      padding: 20px; } }
+  @media screen and (max-width: 500px) {
+    nav {
+      font-size: 15px;
+      padding: 15px; } }
   nav .nav-brand {
     color: #526252;
     text-decoration: none; }
@@ -67,6 +85,18 @@ header {
   margin-top: 80px;
   overflow: hidden;
   position: relative; }
+  @media screen and (max-width: 900px) {
+    header {
+      margin-top: 64px;
+      height: calc(100vh - 64px); } }
+  @media screen and (max-width: 500px) {
+    header {
+      margin-top: 48px;
+      height: calc(70vh - 48px); } }
+  @media screen and (max-width: 400px) {
+    header {
+      margin-top: 48px;
+      height: calc(60vh - 48px); } }
   header .header-bold-row {
     height: 100%;
     width: 300vh;
@@ -78,11 +108,17 @@ header {
       font-family: "PeaceSansRegular", serif;
       height: 100%;
       display: inline-block; }
+      @media screen and (max-width: 750px) {
+        header .header-bold-row .header-bold {
+          max-width: 120vw; } }
       header .header-bold-row .header-bold.header-center {
         fill: #526252; }
       header .header-bold-row .header-bold.header-left, header .header-bold-row .header-bold.header-right {
         fill: rgba(82, 98, 82, 0.5);
         margin: 0 -50px; }
+        @media screen and (max-width: 500px) {
+          header .header-bold-row .header-bold.header-left, header .header-bold-row .header-bold.header-right {
+            display: none; } }
   header .header-overlay-row {
     position: absolute;
     top: 0;
@@ -108,9 +144,6 @@ main .main-row {
       color: #ffffff; }
   main .main-row.row-white {
     background-color: #ffffff; }
-main article, main aside {
-  max-width: 900px;
-  margin: 0 auto 15px; }
 main .aside-enroll {
   margin-bottom: 0; }
   main .aside-enroll .enroll-text {

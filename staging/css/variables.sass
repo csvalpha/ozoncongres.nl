@@ -22,3 +22,10 @@ $black: #000000
   src: url("../fonts/SelimaRegular.woff") format("woff")
   font-style: normal
   font-weight: normal
+
+
+$breakpoints: (tablet: "max-width: 900px", small: "max-width: 750px", mobile: "max-width: 500px", narrow: "max-width: 400px")
+
+@mixin breakpoint($key, $media: screen)
+  @media #{$media} and (unquote(map-get($breakpoints, $key)))
+    @content

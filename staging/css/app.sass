@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6
 p, ul, ol
   font-size: 20px
 
+article, aside
+  max-width: 900px
+  margin: 0 auto 15px
+
 .button
   border: none
   padding: 5px 20px
@@ -28,3 +32,9 @@ p, ul, ol
 
   .aside-component
     width: 30%
+
+    +breakpoint(small)
+      width: 48%
+
+    +breakpoint(mobile)
+      width: 100%
