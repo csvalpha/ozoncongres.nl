@@ -21,6 +21,19 @@ body {
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px; }
 
+p, ul, ol {
+  font-size: 20px; }
+
+.button {
+  border: none;
+  padding: 5px 20px;
+  background-color: #B3F1B9;
+  color: #526252;
+  text-decoration: none; }
+  .button:hover {
+    background-color: #526252;
+    color: #ffffff; }
+
 nav {
   position: fixed;
   top: 0;
@@ -44,7 +57,8 @@ header {
   height: calc(100vh - 80px);
   padding: 10px 0;
   margin-top: 80px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   header .header-bold-row {
     height: 100%;
     width: 300vh;
@@ -63,7 +77,7 @@ header {
         margin: 0 -50px; }
   header .header-overlay-row {
     position: absolute;
-    top: 80px;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -80,14 +94,49 @@ header {
 
 main .main-row {
   padding: 25px; }
-  main .main-row article, main .main-row aside {
-    max-width: 900px;
-    margin: 0 auto 15px; }
   main .main-row.row-primary {
     background-color: #B3F1B9; }
     main .main-row.row-primary h1, main .main-row.row-primary h2, main .main-row.row-primary h3, main .main-row.row-primary h4, main .main-row.row-primary h5, main .main-row.row-primary h6 {
       color: #ffffff; }
   main .main-row.row-white {
     background-color: #ffffff; }
+main article, main aside {
+  max-width: 900px;
+  margin: 0 auto 15px; }
+main .aside-enroll {
+  margin-bottom: 0; }
+  main .aside-enroll .enroll-text {
+    font-size: 30px; }
+  main .aside-enroll .button {
+    float: right;
+    font-size: 25px; }
+main .aside-association, main .aside-address {
+  text-align: center;
+  margin-bottom: 0; }
+  main .aside-association h3, main .aside-association h4, main .aside-address h3, main .aside-address h4 {
+    margin: 0; }
+  main .aside-association a, main .aside-address a {
+    text-decoration: none; }
+main .aside-address .link-address {
+  color: #ffffff; }
+  main .aside-address .link-address:hover {
+    color: #ffffff; }
+main .aside-address .link-mail {
+  color: #526252; }
+  main .aside-address .link-mail:hover {
+    color: #526252; }
+
+footer {
+  background-color: #526252;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; }
+  footer p {
+    font-size: 15px; }
+  footer a {
+    color: #ffffff;
+    text-decoration: none; }
+    footer a:hover {
+      color: #B3F1B9; }
 
 /*# sourceMappingURL=style.css.map */

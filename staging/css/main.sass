@@ -2,14 +2,49 @@ main
   .main-row
     padding: 25px
 
-    article, aside
-      max-width: 900px
-      margin: 0 auto 15px
-
     &.row-primary
       background-color: $color-primary
+
       h1, h2, h3, h4, h5, h6
         color: $white
 
     &.row-white
       background-color: $white
+
+  article, aside
+    max-width: 900px
+    margin: 0 auto 15px
+
+  .aside-enroll
+    margin-bottom: 0
+
+    .enroll-text
+      font-size: 30px
+
+    .button
+      float: right
+      font-size: 25px
+
+  .aside-association, .aside-address
+    text-align: center
+    margin-bottom: 0
+
+    h3, h4
+      margin: 0
+
+    a
+      text-decoration: none
+
+  .aside-address
+    .link-address
+      color: $white
+
+      &:hover
+        color: $white
+
+    .link-mail
+      color: $color-secondary
+
+      &:hover
+        color: $color-secondary
+
