@@ -1,7 +1,25 @@
+@font-face {
+  font-family: "GlacialIndifferenceRegular";
+  src: url("../fonts/GlacialIndifferenceRegular.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "PeaceSansRegular";
+  src: url("../fonts/PeaceSansRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "SelimaRegular";
+  src: url("../fonts/SelimaRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal; }
 body {
   margin: 0;
-  font-family: "Glacial Indifference", serif;
+  font-family: "GlacialIndifferenceRegular", serif;
   color: #526252; }
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 2px; }
 
 nav {
   position: fixed;
@@ -27,26 +45,49 @@ header {
   padding: 10px 0;
   margin-top: 80px;
   overflow: hidden; }
-  header .header-row {
+  header .header-bold-row {
     height: 100%;
-    width: 200%;
+    width: 300vh;
     margin-left: 50%;
     transform: translateX(-50%);
-    text-align: center; }
-    header .header-row .header-bold {
-      font-family: "Peace Sans", serif;
+    text-align: center;
+    z-index: 0; }
+    header .header-bold-row .header-bold {
+      font-family: "PeaceSansRegular", serif;
       height: 100%;
       display: inline-block; }
-      header .header-row .header-bold.header-center {
+      header .header-bold-row .header-bold.header-center {
         fill: #526252; }
-      header .header-row .header-bold.header-left, header .header-row .header-bold.header-right {
+      header .header-bold-row .header-bold.header-left, header .header-bold-row .header-bold.header-right {
         fill: rgba(82, 98, 82, 0.5);
         margin: 0 -50px; }
-  header .header-overlay {
-    font-family: "Selima", serif;
-    color: #ffffff;
+  header .header-overlay-row {
     position: absolute;
-    transform: rotate(10deg);
-    transform: translate(50%, 50%); }
+    top: 80px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    header .header-overlay-row .header-overlay {
+      font-family: "SelimaRegular", serif;
+      fill: #ffffff;
+      max-height: 80%;
+      max-width: 100%;
+      z-index: 1; }
+
+main .main-row {
+  padding: 25px; }
+  main .main-row article, main .main-row aside {
+    max-width: 900px;
+    margin: 0 auto 15px; }
+  main .main-row.row-primary {
+    background-color: #B3F1B9; }
+    main .main-row.row-primary h1, main .main-row.row-primary h2, main .main-row.row-primary h3, main .main-row.row-primary h4, main .main-row.row-primary h5, main .main-row.row-primary h6 {
+      color: #ffffff; }
+  main .main-row.row-white {
+    background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

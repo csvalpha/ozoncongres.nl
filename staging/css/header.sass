@@ -5,15 +5,16 @@ header
   margin-top: 80px
   overflow: hidden
 
-  .header-row
+  .header-bold-row
     height: 100%
-    width: 200%
+    width: 300vh
     margin-left: 50%
     transform: translateX(-50%)
     text-align: center
+    z-index: 0
 
     .header-bold
-      font-family: "Peace Sans", serif
+      font-family: "PeaceSansRegular", serif
       height: 100%
       display: inline-block
 
@@ -24,9 +25,20 @@ header
         fill: $color-secondary-transparant
         margin: 0 -50px
 
-  .header-overlay
-    font-family: "Selima", serif
-    color: $white
+  .header-overlay-row
     position: absolute
-    transform: rotate(10deg)
-    transform: translate(50%, 50%)
+    top: 80px
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .header-overlay
+      font-family: "SelimaRegular", serif
+      fill: $white
+      max-height: 80%
+      max-width: 100%
+      z-index: 1
