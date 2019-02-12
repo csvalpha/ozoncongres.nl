@@ -133,7 +133,7 @@ header {
       font-family: "SelimaRegular", serif;
       fill: #ffffff;
       max-height: 80%;
-      max-width: 100%;
+      width: 100%;
       z-index: 1; }
 
 main .main-row {
