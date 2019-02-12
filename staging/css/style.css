@@ -92,11 +92,11 @@ header {
   @media screen and (max-width: 500px) {
     header {
       margin-top: 48px;
-      height: calc(80vh - 48px); } }
+      height: calc(90vh - 48px); } }
   @media screen and (max-width: 400px) {
     header {
       margin-top: 48px;
-      height: calc(70vh - 48px); } }
+      height: calc(80vh - 48px); } }
   header .header-bold-row {
     height: 100%;
     width: 300vh;
@@ -115,7 +115,7 @@ header {
         fill: #526252; }
       header .header-bold-row .header-bold.header-left, header .header-bold-row .header-bold.header-right {
         fill: rgba(82, 98, 82, 0.5);
-        margin: 0 -50px; }
+        margin: 0; }
         @media screen and (max-width: 500px) {
           header .header-bold-row .header-bold.header-left, header .header-bold-row .header-bold.header-right {
             display: none; } }
