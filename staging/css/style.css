@@ -169,11 +169,13 @@ main .aside-enroll {
     font-size: 15px; } }
 main .aside-video {
   position: relative;
-  height: 550px; }
+  height: 550px;
+  overflow-x: hidden; }
   @media screen and (max-width: 900px) {
     main .aside-video {
       height: 0;
-      padding-bottom: 56.25%; } }
+      padding-bottom: 56.25%;
+      max-width: calc(100% - 50px); } }
   main .aside-video iframe {
     position: absolute;
     top: 0;

@@ -40,10 +40,12 @@ main
   .aside-video
     position: relative
     height: 550px
+    overflow-x: hidden
 
     +breakpoint(tablet)
       height: 0
       padding-bottom: 56.25%
+      max-width: calc(100% - 50px)
 
     iframe
       position: absolute
