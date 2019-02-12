@@ -21,6 +21,37 @@ main
       float: right
       font-size: 25px
 
+    +breakpoint(small)
+      text-align: center
+      .enroll-text
+        display: inline-block
+        width: 100%
+        margin-bottom: 10px
+      .button
+        float: none
+
+  article h1
+    +breakpoint(small)
+      font-size: 20px
+
+    +breakpoint(mobile)
+      font-size: 15px
+
+  .aside-video
+    position: relative
+    height: 550px
+
+    +breakpoint(tablet)
+      height: 0
+      padding-bottom: 56.25%
+
+    iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+
   .aside-program
     ul
       list-style: none
@@ -49,6 +80,9 @@ main
 
     .link-mail
       color: $color-secondary
+
+      +breakpoint(mobile)
+        font-size: 10px
 
       &:hover
         color: $color-secondary
