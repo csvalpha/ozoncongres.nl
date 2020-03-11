@@ -10,7 +10,7 @@ header
   justify-content: center
 
   .header-logo
-    width: 75%
+    max-width: 100%
     max-height: 80vh
 
   +breakpoint(tablet)
@@ -20,9 +20,6 @@ header
   +breakpoint(mobile)
     margin-top: 48px
     height: calc(90vh - 48px)
-
-    .header-logo
-      width: 80%
 
   +breakpoint(narrow)
     margin-top: 48px

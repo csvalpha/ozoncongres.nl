@@ -122,7 +122,7 @@ header {
 }
 
 header .header-logo {
-  width: 75%;
+  max-width: 100%;
   max-height: 80vh;
 }
 
@@ -137,9 +137,6 @@ header .header-logo {
   header {
     margin-top: 48px;
     height: calc(90vh - 48px);
-  }
-  header .header-logo {
-    width: 80%;
   }
 }
 
