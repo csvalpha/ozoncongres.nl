@@ -5,6 +5,13 @@ header
   margin-top: 80px
   overflow: hidden
   position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .header-logo
+    width: 75%
+    max-height: 80vh
 
   +breakpoint(tablet)
     margin-top: 64px
@@ -14,50 +21,9 @@ header
     margin-top: 48px
     height: calc(90vh - 48px)
 
+    .header-logo
+      width: 80%
+
   +breakpoint(narrow)
     margin-top: 48px
     height: calc(80vh - 48px)
-
-  .header-bold-row
-    height: 100%
-    width: 300vh
-    margin-left: 50%
-    transform: translateX(-50%)
-    text-align: center
-    z-index: 0
-
-    .header-bold
-      font-family: "PeaceSansRegular", serif
-      height: 100%
-      display: inline-block
-
-      +breakpoint(small)
-        max-width: 120vw
-
-      &.header-center
-        fill: $color-secondary
-
-      &.header-left, &.header-right
-        fill: $color-secondary-transparant
-        margin: 0
-
-        +breakpoint(mobile)
-          display: none
-
-  .header-overlay-row
-    position: absolute
-    top: 0
-    left: 0
-    height: 100%
-    width: 100%
-    z-index: 1
-    display: flex
-    align-items: center
-    justify-content: center
-
-    .header-overlay
-      font-family: "SelimaRegular", serif
-      fill: $white
-      max-height: 80%
-      width: 100%
-      z-index: 1
