@@ -94,13 +94,13 @@ nav {
 }
 
 nav .nav-brand {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
 nav .nav-date {
   float: right;
-  color: #ffffff;
+  color: #000000;
 }
 
 header {
@@ -164,7 +164,7 @@ main .main-row.row-white {
 }
 
 main .main-row.row-white h3 {
-  color: #3570b8;
+  color: #000000;
 }
 
 main .aside-enroll {
@@ -248,6 +248,10 @@ main .aside-association h3, main .aside-association h4, main .aside-address h3, 
 
 main .aside-association a, main .aside-address a {
   text-decoration: none;
+}
+
+main .aside-association {
+  color: #000000;
 }
 
 main .aside-address .link-address {
