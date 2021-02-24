@@ -1,40 +1,30 @@
 body
   margin: 0
-  font-family: "MyriadPro", serif
+  font-family: "Nunito Sans"
   color: $color-secondary
   overflow-x: hidden
 
 h1, h2, h3, h4, h5, h6
-  letter-spacing: 2px
-  text-transform: uppercase
+    letter-spacing: 2px
+    text-transform: uppercase
 
 p, ul, ol
-  font-size: 20px
+    font-size: 20px
 
-article, aside
+article
   max-width: 900px
   margin: 0 auto 15px
+  display: flex
+  flex-direction: column
 
 .button
   border: none
   padding: 5px 20px
   background-color: $color-secondary
-  color: $white
+  color: white
   text-decoration: none
 
   &:hover
+    //TODO: make this an animation (or whatever, transition idk) instead
     scale: 105%
 
-.aside-components
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
-
-  .aside-component
-    width: 30%
-
-    +breakpoint(small)
-      width: 48%
-
-    +breakpoint(mobile)
-      width: 100%

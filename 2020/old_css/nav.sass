@@ -1,0 +1,27 @@
+nav
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: $color-secondary
+  font-size: 25px
+  letter-spacing: 1px
+  padding: 25px
+  box-sizing: border-box
+  z-index: 100
+
+  +breakpoint(tablet)
+    font-size: 20px
+    padding: 20px
+
+  +breakpoint(mobile)
+    font-size: 15px
+    padding: 15px
+
+  .nav-brand
+    color: $black
+    text-decoration: none
+
+  .nav-date
+    float: right
+    color: $black

@@ -1,0 +1,40 @@
+body
+  margin: 0
+  font-family: "MyriadPro", serif
+  color: $color-secondary
+  overflow-x: hidden
+
+h1, h2, h3, h4, h5, h6
+  letter-spacing: 2px
+  text-transform: uppercase
+
+p, ul, ol
+  font-size: 20px
+
+article, aside
+  max-width: 900px
+  margin: 0 auto 15px
+
+.button
+  border: none
+  padding: 5px 20px
+  background-color: $color-secondary
+  color: $white
+  text-decoration: none
+
+  &:hover
+    scale: 105%
+
+.aside-components
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+  .aside-component
+    width: 30%
+
+    +breakpoint(small)
+      width: 48%
+
+    +breakpoint(mobile)
+      width: 100%

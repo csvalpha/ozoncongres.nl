@@ -11,4 +11,16 @@ header
 
   .header-logo
     max-width: 100%
-    max-height: 90%
+    max-height: 80vh
+
+  +breakpoint(tablet)
+    margin-top: 64px
+    height: calc(100vh - 64px)
+
+  +breakpoint(mobile)
+    margin-top: 48px
+    height: calc(90vh - 48px)
+
+  +breakpoint(narrow)
+    margin-top: 48px
+    height: calc(80vh - 48px)
