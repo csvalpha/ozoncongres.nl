@@ -1,24 +1,28 @@
 nav
   display: flex
-  flex-direction: row
-  justify-content: space-between
+  flex-direction: column
+  justify-content: center
   position: fixed
   bottom: 0
   left: 0
   width: 100%
   background-color: $color-primary
   font-size: 25px
-  padding: 25px
   z-index: 100
-  box-sizing: border-box
-  max-height: 80px
+  color: $color-tertiary
+  height: 80px
+
+  .nav-content
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 0 25px
 
 
-  .nav-brand
-    letter-spacing: 2px
-    color: $color-alpha-tertiary
-    text-decoration: none
+    .nav-brand
+      letter-spacing: 2px
+      color: $color-tertiary
+      text-decoration: none
 
-  .nav-date
-    float: right
-    color: $color-alpha-tertiary
+    .nav-date
+      float: right

@@ -9,11 +9,11 @@ footer
     font-size: 12px
 
   a
-    color: white
+    color: $color-tertiary
     text-decoration: none
 
     &:hover
-      color: $color-primary
+      color: $color-secondary
 
   .footer-row
     display: flex
@@ -22,6 +22,7 @@ footer
 
     &.row-primary
       background-color: $color-primary
+      color: $color-tertiary
 
     &.row-secondary
       background-color: $color-secondary
@@ -35,6 +36,20 @@ footer
       background-color: white
 
   .footer-association
+    align-self: center
+    max-width: 900px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .association-website
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+    .association-logo
+      max-width: 20%
 
 
   .footer-location
@@ -42,14 +57,20 @@ footer
   .footer-other
     display: flex
     flex-direction: row
-    flex-wrap: wrap
     justify-content: center
-    align-items: stretch
+    align-items: center
 
-    .footer-other-item
+    .footer-other-content
+      max-width: 900px
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
       flex-grow: 1
-      flex-basis: calc(1/3 * 100%)
-      text-align: center
+
+      .footer-other-item
+        flex-grow: 1
+        flex-basis: calc(1/3 * 100%)
+        text-align: center
 
 
 
