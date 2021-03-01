@@ -1,97 +1,102 @@
 main
   .main-row
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: flex-start
     padding: 25px
 
     &.row-primary
       background-color: $color-primary
+      color: $color-alpha-tertiary
 
-      h1, h2, h3, h4, h5, h6, p
-        color: $white
+      h1, h2, h3, h4, h5, h6
+        color: $color-tertiary
+
+    &.row-secondary
+      background-color: $color-secondary
+      color: $color-alpha-tertiary
+
+      h1, h2, h3, h4, h5, h6
+        color: $color-primary
+
+    &.row-tertiary
+      background-color: $color-alpha-tertiary
+      color: $color-primary
+
+      h1, h2, h3, h4, h5, h6
+        color: white
 
     &.row-white
-      background-color: $white
+      background-color: white
 
-      h3
-        color: $black
+      h1, h2, h3, h4, h5, h6
+        color: $color-primary
 
-  .aside-enroll
-    margin-bottom: 0
+  .enroll, .introduction, .program
+    max-width: 900px
+    flex-grow: 1
+
+  .enroll
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
 
     .enroll-text
       font-size: 30px
+      text-transform: uppercase
 
-    .button
+    .enroll-button
+      @extend .button
       float: right
       font-size: 25px
 
-    +breakpoint(small)
-      text-align: center
-      .enroll-text
-        display: inline-block
-        width: 100%
-        margin-bottom: 10px
-      .button
-        float: none
+  .introduction
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px
 
-  article h1
-    +breakpoint(small)
-      font-size: 20px
-
-    +breakpoint(mobile)
-      font-size: 15px
-
-  .aside-video
-    position: relative
-    height: 550px
-    overflow-x: hidden
-
-    +breakpoint(tablet)
-      height: 0
-      padding-bottom: 56.25%
-      max-width: calc(100% - 50px)
-
-    iframe
-      position: absolute
-      top: 0
-      left: 0
+    .introduction-video
+      flex-basis: auto
       width: 100%
-      height: 100%
+      max-width: 900px
 
-  .aside-program
+      .introduction-video-container
+        position: relative
+        overflow: hidden
+        width: 100%
+        padding-top: 56.25%
+
+        iframe
+          position: absolute
+          top: 0
+          left: 0
+          bottom: 0
+          right: 0
+          width: 100%
+          height: 100%
+
+  .program
+    display: flex
+    flex-direction: column
+
     ul
       list-style: none
       padding: 0
 
-  .aside-workshops
-    .aside-component h3
-      color: $color-secondary
+    .program-schedule
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: center
+      align-items: flex-start
 
-  .aside-association, .aside-address
-    text-align: center
-    margin-bottom: 0
+      .program-schedule-day
+        flex-basis: calc(1/3 * 100%)
 
-    h3, h4
-      margin: 0
+    .program-elaboration
 
-    a
-      text-decoration: none
 
-  .aside-association
-    color: $black
-
-  .aside-address
-    .link-address
-      color: $white
-
-      &:hover
-        color: $white
-
-    .link-mail
-      color: $color-secondary
-
-      +breakpoint(mobile)
-        font-size: 10px
-
-      &:hover
-        color: $color-secondary
 
