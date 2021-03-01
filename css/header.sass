@@ -4,9 +4,42 @@ header
   overflow: hidden
   position: relative
   display: flex
+  flex-direction: column
   align-items: center
-  justify-content: center
+  justify-content: flex-start
 
-  .header-logo
-    max-width: 90%
-    max-height: 90%
+  .header-logo-container
+    flex-basis: 90%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .header-logo
+      max-width: 90%
+      max-height: 90%
+
+  .header-arrow
+    flex-basis: 10%
+
+    .arrow-down
+      width: 0
+      height: 0
+      border: 20px solid transparent
+      border-right-width: 40px
+      border-left-width: 40px
+      border-top-color: $color-quaternary
+
+    .top
+      position: relative
+      bottom: calc(40px *-0.95)
+      left: 0
+      z-index: 2
+      border-top-color: $color-primary
+
+    .bot
+      position: relative
+      bottom: 0
+      left: 0
+      z-index: 1
+
+

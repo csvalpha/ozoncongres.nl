@@ -81,12 +81,43 @@ header {
   overflow: hidden;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-header .header-logo {
+header .header-logo-container {
+  flex-basis: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-logo-container .header-logo {
   max-width: 90%;
   max-height: 90%;
+}
+header .header-arrow {
+  flex-basis: 10%;
+}
+header .header-arrow .arrow-down {
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-width: 40px;
+  border-left-width: 40px;
+  border-top-color: #6eaaba;
+}
+header .header-arrow .top {
+  position: relative;
+  bottom: calc(40px *-0.95);
+  left: 0;
+  z-index: 2;
+  border-top-color: #cbe9f4;
+}
+header .header-arrow .bot {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 main .main-row {
