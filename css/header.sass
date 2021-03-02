@@ -1,6 +1,6 @@
 header
   height: calc(100vh - 80px)
-  padding: 10px 0
+  padding: 0
   overflow: hidden
   position: relative
   display: flex
@@ -9,17 +9,19 @@ header
   justify-content: flex-start
 
   .header-logo-container
-    flex-basis: 90%
+    max-height: calc(90% - 70px)
     display: flex
     justify-content: center
     align-items: center
+    flex-grow: 1
 
     .header-logo
+      max-height: 100%
       max-width: 90%
-      max-height: 90%
 
   .header-arrow
-    flex-basis: 10%
+    height: 70px
+
 
     .arrow-down
       width: 0
@@ -27,7 +29,7 @@ header
       border: 20px solid transparent
       border-right-width: 40px
       border-left-width: 40px
-      border-top-color: $color-quaternary
+      border-top-color: $color-secondary
 
     .top
       position: relative
@@ -41,5 +43,20 @@ header
       bottom: 0
       left: 0
       z-index: 1
+
+  .bounce
+    position: relative
+    left: 0
+    bottom: 0
+    -webkit-animation: bounce 2s infinite
+
+    @-webkit-keyframes bounce
+      0%
+        bottom: 0px
+      20%
+        bottom: 10px
+      100%
+        bottom: 0px
+
 
 

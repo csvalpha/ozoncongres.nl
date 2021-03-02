@@ -3,6 +3,7 @@
   flex-direction: column
   justify-content: flex-start
   align-items: stretch
+
 body
   margin: 0
   margin-bottom: 80px
@@ -12,11 +13,14 @@ body
   background-color: $color-primary
 
 h1, h2, h3, h4, h5, h6
-    letter-spacing: 2px
-    text-transform: uppercase
+  letter-spacing: 2px
+  text-transform: uppercase
 
-p, ul, ol
-    font-size: 20px
+
+p, ul, ol, i, b
+  font-size: 20px
+  @media (max-width: 700px)
+    font-size: 15px
 
 article
   max-width: 900px
