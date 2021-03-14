@@ -1,0 +1,29 @@
+@import "index"
+
+.radio-container
+  @extend .main-row, .row-primary
+  height: calc(100vh - 80px)
+
+  .radio-content
+    max-width: 900px
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-grow: 1
+    align-self: stretch
+
+    audio
+      width: 100%
+
+
+    .radio-header-logo-container
+      max-height: 90%
+      display: flex
+      justify-content: center
+      align-items: stretch
+      align-self: stretch
+
+      .radio-header-logo
+        width: 100%
+        max-width: 100%
+        flex-grow: 1
