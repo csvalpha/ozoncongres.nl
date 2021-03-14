@@ -386,6 +386,7 @@ footer .footer-other .footer-other-content .footer-other-item {
   align-items: center;
   flex-grow: 1;
   align-self: stretch;
+  justify-content: center;
 }
 .radio-container .radio-content audio {
   width: 100%;
