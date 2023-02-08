@@ -11,13 +11,23 @@ header
   .header-logo-container
     max-height: calc(90% - 70px)
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
     flex-grow: 1
 
     .header-logo
       max-height: 100%
-      max-width: 90%
+      width: 90%
+      max-width: 1000px
+
+    .header-subtitle 
+      margin-top: 30px
+      font-size: 25px
+      line-height: 40px
+      font-family: "ComicSansMS", serif
+      max-width: 500px
+      text-align: center
 
   .header-arrow
     height: 70px
