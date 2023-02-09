@@ -115,6 +115,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  background-image: url("../images/background.svg");
+  background-size: cover;
+  background-position: bottom right;
 }
 header .header-logo-container {
   max-height: calc(90% - 70px);
@@ -141,25 +144,13 @@ header .header-arrow {
   height: 70px;
 }
 header .header-arrow .arrow-down {
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-right-width: 40px;
-  border-left-width: 40px;
-  border-top-color: #ededed;
-}
-header .header-arrow .top {
-  position: relative;
-  bottom: -38px;
-  left: 0;
-  z-index: 2;
-  border-top-color: #c31725;
-}
-header .header-arrow .bot {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/chevron-down.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 header .bounce {
   position: relative;
