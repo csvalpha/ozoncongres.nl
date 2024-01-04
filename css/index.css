@@ -22,9 +22,11 @@ body {
   margin: 0;
   margin-bottom: 80px;
   font-family: "FormaDJRMicro", sans-serif;
-  color: #ededed;
+  color: #fff
+;
   overflow-x: hidden;
-  background-color: #c31725;
+  background-color: #2C4f9E
+;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,7 +51,8 @@ article {
 }
 
 a, a:hover {
-  color: #c31725;
+  color: #2C4f9E
+;
 }
 
 h2 + p {
@@ -59,7 +62,8 @@ h2 + p {
 .button, main .enroll .enroll-button {
   border: none;
   padding: 5px 20px;
-  background-color: #ededed;
+  background-color: #fff
+;
   color: white;
   text-decoration: none;
 }
@@ -75,10 +79,12 @@ nav {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #c31725;
+  background-color: #2C4f9E
+;
   font-size: 25px;
   z-index: 100;
-  color: #010202;
+  color: #EF6701
+;
   height: 80px;
 }
 @media (max-width: 500px) {
@@ -99,7 +105,8 @@ nav .nav-content {
 }
 nav .nav-content .nav-brand {
   letter-spacing: 2px;
-  color: #010202;
+  color: #EF6701
+;
   text-decoration: none;
 }
 nav .nav-content .nav-date {
@@ -115,9 +122,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-image: url("../images/background.svg");
+  background-image: url("../images/OZONCongres\ Banner.png");
   background-size: cover;
-  background-position: bottom right;
+  background-position: bottom center
 }
 header .header-logo-container {
   max-height: calc(90% - 70px);
@@ -178,22 +185,30 @@ main .main-row {
   padding: 25px;
 }
 main .main-row.row-primary {
-  background-color: #c31725;
-  color: #010202;
+  background-color: #2C4f9E
+;
+  color: #EF6701
+;
 }
 main .main-row.row-primary h1, main .main-row.row-primary h2, main .main-row.row-primary h3, main .main-row.row-primary h4, main .main-row.row-primary h5, main .main-row.row-primary h6 {
-  color: #010202;
+  color: #EF6701
+;
 }
 main .main-row.row-secondary {
-  background-color: #ededed;
-  color: #010202;
+  background-color: #fff
+;
+  color: #EF6701
+;
 }
 main .main-row.row-secondary h1, main .main-row.row-secondary h2, main .main-row.row-secondary h3, main .main-row.row-secondary h4, main .main-row.row-secondary h5, main .main-row.row-secondary h6 {
-  color: #c31725;
+  color: #2C4f9E
+;
 }
 main .main-row.row-tertiary {
-  background-color: #010202;
-  color: #c31725;
+  background-color: #EF6701
+;
+  color: #2C4f9E
+;
 }
 main .main-row.row-tertiary h1, main .main-row.row-tertiary h2, main .main-row.row-tertiary h3, main .main-row.row-tertiary h4, main .main-row.row-tertiary h5, main .main-row.row-tertiary h6 {
   color: white;
@@ -202,7 +217,8 @@ main .main-row.row-white {
   background-color: white;
 }
 main .main-row.row-white h1, main .main-row.row-white h2, main .main-row.row-white h3, main .main-row.row-white h4, main .main-row.row-white h5, main .main-row.row-white h6 {
-  color: #c31725;
+  color: #2C4f9E
+;
 }
 main .enroll, main .introduction, main .program {
   max-width: 900px;
@@ -222,7 +238,8 @@ main .enroll {
 main .enroll .enroll-text {
   font-size: 30px;
   text-transform: uppercase;
-  color: #c31725;
+  color: #2C4f9E
+;
 }
 @media (max-width: 700px) {
   main .enroll .enroll-text {
@@ -241,8 +258,10 @@ main .enroll .enroll-text {
   }
 }
 main .enroll .enroll-button {
-  background: #c31725;
-  color: #ededed;
+  background: #2C4f9E
+;
+  color: #fff
+;
   float: right;
   font-size: 25px;
 }
@@ -342,11 +361,13 @@ footer p {
   font-size: 12px;
 }
 footer a {
-  color: #010202;
+  color: #EF6701
+;
   text-decoration: none;
 }
 footer a:hover {
-  color: #ededed;
+  color: #fff
+;
 }
 footer .footer-row {
   display: flex;
@@ -354,16 +375,22 @@ footer .footer-row {
   padding: 10px;
 }
 footer .footer-row.row-primary {
-  background-color: #c31725;
-  color: #010202;
+  background-color: #2C4f9E
+;
+  color: #EF6701
+;
 }
 footer .footer-row.row-secondary {
-  background-color: #ededed;
-  color: #010202;
+  background-color: #fff
+;
+  color: #EF6701
+;
 }
 footer .footer-row.row-tertiary {
-  background-color: #010202;
-  color: #c31725;
+  background-color: #EF6701
+;
+  color: #2C4f9E
+;
 }
 footer .footer-row.row-white {
   background-color: white;
