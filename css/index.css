@@ -18,10 +18,14 @@
   font-family: "ComicSansMS";
   src: url("../fonts/ComicSansMS.ttf");
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
 body {
   margin: 0;
   margin-bottom: 80px;
-  font-family: "FormaDJRMicro", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff
 ;
   overflow-x: hidden;
