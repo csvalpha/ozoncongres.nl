@@ -83,12 +83,10 @@ nav {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #2C4f9E
-;
+  background-color: #2C4f9E;
   font-size: 25px;
   z-index: 100;
-  color: #EF6701
-;
+  color: #EF6701;
   height: 80px;
 }
 @media (max-width: 500px) {
@@ -126,7 +124,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-image: url("../images/OZONCongres\ Banner.png");
+  background-image: url("../images/OZONC\ banner\ versie\ 2\ met\ tekst.svg");
   background-size: cover;
   background-position: bottom center
 }
@@ -142,6 +140,9 @@ header .header-logo-container .header-logo {
   max-height: 100%;
   width: 90%;
   max-width: 1000px;
+}
+header .header-title {
+  color:#EF6701;
 }
 header .header-logo-container .header-subtitle {
   margin-top: 30px;
