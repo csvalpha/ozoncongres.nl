@@ -29,7 +29,7 @@ body {
   color: #fff
 ;
   overflow-x: hidden;
-  background-color: #2C4f9E
+  background-color: #004BA2
 ;
 }
 
@@ -55,7 +55,7 @@ article {
 }
 
 a, a:hover {
-  color: #2C4f9E
+  color: #004BA2
 ;
 }
 
@@ -83,7 +83,7 @@ nav {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #2C4f9E;
+  background-color: #004BA2;
   font-size: 25px;
   z-index: 100;
   color: #EF6701;
@@ -190,7 +190,7 @@ main .main-row {
   padding: 25px;
 }
 main .main-row.row-primary {
-  background-color: #2C4f9E
+  background-color: #004BA2
 ;
   color: #EF6701
 ;
@@ -206,13 +206,13 @@ main .main-row.row-secondary {
 ;
 }
 main .main-row.row-secondary h1, main .main-row.row-secondary h2, main .main-row.row-secondary h3, main .main-row.row-secondary h4, main .main-row.row-secondary h5, main .main-row.row-secondary h6 {
-  color: #2C4f9E
+  color: #004BA2
 ;
 }
 main .main-row.row-tertiary {
   background-color: #EF6701
 ;
-  color: #2C4f9E
+  color: #004BA2
 ;
 }
 main .main-row.row-tertiary h1, main .main-row.row-tertiary h2, main .main-row.row-tertiary h3, main .main-row.row-tertiary h4, main .main-row.row-tertiary h5, main .main-row.row-tertiary h6 {
@@ -222,7 +222,7 @@ main .main-row.row-white {
   background-color: white;
 }
 main .main-row.row-white h1, main .main-row.row-white h2, main .main-row.row-white h3, main .main-row.row-white h4, main .main-row.row-white h5, main .main-row.row-white h6 {
-  color: #2C4f9E
+  color: #004BA2
 ;
 }
 main .enroll, main .introduction, main .program {
@@ -243,7 +243,7 @@ main .enroll {
 main .enroll .enroll-text {
   font-size: 30px;
   text-transform: uppercase;
-  color: #2C4f9E
+  color: #004BA2
 ;
 }
 @media (max-width: 700px) {
@@ -263,7 +263,7 @@ main .enroll .enroll-text {
   }
 }
 main .enroll .enroll-button {
-  background: #2C4f9E
+  background: #004BA2
 ;
   color: #fff
 ;
@@ -380,7 +380,7 @@ footer .footer-row {
   padding: 10px;
 }
 footer .footer-row.row-primary {
-  background-color: #2C4f9E
+  background-color: #004BA2
 ;
   color: #EF6701
 ;
@@ -394,7 +394,7 @@ footer .footer-row.row-secondary {
 footer .footer-row.row-tertiary {
   background-color: #EF6701
 ;
-  color: #2C4f9E
+  color: #004BA2
 ;
 }
 footer .footer-row.row-white {
