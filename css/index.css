@@ -46,7 +46,6 @@ p, ul, ol, i, b {
     font-size: 15px;
   }
 }
-
 article {
   max-width: 900px;
   margin: 0 auto 15px;
@@ -124,33 +123,37 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-image: url("../images/OZONC\ banner\ versie\ 2\ met\ tekst.svg");
+  background-image: url("../images/OZONC\ banner\ versie\ 2\ zonder\ tekst.svg");
   background-size: cover;
   background-position: bottom center
 }
 header .header-logo-container {
-  max-height: calc(90% - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  color:#EF6701;
 }
 header .header-logo-container .header-logo {
   max-height: 100%;
   width: 90%;
   max-width: 1000px;
 }
-header .header-title {
-  color:#EF6701;
+header .header-logo-container .top-title {
+  font-size: 23px;
+  text-shadow: 0 0 10px #004BA2;
+}
+header .header-logo-container .header-title {
+  font-size: 60px;
+  text-shadow: 0 0 10px #004BA2;
 }
 header .header-logo-container .header-subtitle {
-  margin-top: 30px;
   font-size: 25px;
   line-height: 40px;
-  font-family: "ComicSansMS", serif;
   max-width: 500px;
   text-align: center;
+  text-shadow: 0 0 10px #004BA2;
 }
 header .header-arrow {
   height: 70px;
