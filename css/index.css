@@ -22,6 +22,10 @@
   font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.ttf");
 }
+@font-face {
+  font-family: "Ballpark_weiner";
+  src: url("../fonts/ballpark_weiner/BALLW___.TTF");
+}
 body {
   margin: 0;
   margin-bottom: 80px;
@@ -29,7 +33,7 @@ body {
   color: #fff
 ;
   overflow-x: hidden;
-  background-color: #004BA2
+  background-color: #006133
 ;
 }
 
@@ -54,7 +58,7 @@ article {
 }
 
 a, a:hover {
-  color: #004BA2
+  color: #006133
 ;
 }
 
@@ -82,10 +86,10 @@ nav {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #004BA2;
+  background-color: #006133;
   font-size: 25px;
   z-index: 100;
-  color: #EF6701;
+  color: #fff;
   height: 80px;
 }
 @media (max-width: 500px) {
@@ -106,7 +110,7 @@ nav .nav-content {
 }
 nav .nav-content .nav-brand {
   letter-spacing: 2px;
-  color: #EF6701
+  color: #fff
 ;
   text-decoration: none;
 }
@@ -116,13 +120,14 @@ nav .nav-content .nav-date {
 
 header {
   height: calc(100vh - 80px);
+  font-family: "Ballpark_weiner";
   padding: 0;
   overflow: hidden;
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
   background-image: url("../images/OZONC\ banner\ versie\ 2\ zonder\ tekst.svg");
   background-size: cover;
   background-position: bottom center
@@ -130,30 +135,43 @@ header {
 header .header-logo-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
-  color:#EF6701;
+  position: relative;
+  color:#AE0035;
 }
 header .header-logo-container .header-logo {
-  max-height: 100%;
-  width: 90%;
-  max-width: 1000px;
+  margin: 10%;
+  height: 90%;
+  position: absolute;
+  z-index: 0;
 }
 header .header-logo-container .top-title {
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
   font-size: 23px;
-  text-shadow: 0 0 10px #004BA2;
+  text-align: center;
+  text-transform: none;
 }
 header .header-logo-container .header-title {
+  position: absolute;
+  top: 15%;
+  z-index: 1;
   font-size: 60px;
-  text-shadow: 0 0 10px #004BA2;
+  text-align: center;
+  text-transform: none;
 }
 header .header-logo-container .header-subtitle {
+  position: relative;
+  z-index: 1;
   font-size: 25px;
   line-height: 40px;
   max-width: 500px;
   text-align: center;
-  text-shadow: 0 0 10px #004BA2;
+  text-transform: none;
+  margin-bottom: 70px;
+  align-self: flex-end;
 }
 header .header-arrow {
   height: 70px;
@@ -168,8 +186,7 @@ header .header-arrow .arrow-down {
   cursor: pointer;
 }
 header .bounce {
-  position: relative;
-  left: 0;
+  position: absolute;
   bottom: 0;
   -webkit-animation: bounce 2s infinite;
 }
@@ -193,29 +210,29 @@ main .main-row {
   padding: 25px;
 }
 main .main-row.row-primary {
-  background-color: #004BA2
+  background-color: #006133
 ;
-  color: #EF6701
+  color: #fff
 ;
 }
 main .main-row.row-primary h1, main .main-row.row-primary h2, main .main-row.row-primary h3, main .main-row.row-primary h4, main .main-row.row-primary h5, main .main-row.row-primary h6 {
-  color: #EF6701
+  color: #fff
 ;
 }
 main .main-row.row-secondary {
   background-color: #fff
 ;
-  color: #EF6701
+  color: #AE0035
 ;
 }
 main .main-row.row-secondary h1, main .main-row.row-secondary h2, main .main-row.row-secondary h3, main .main-row.row-secondary h4, main .main-row.row-secondary h5, main .main-row.row-secondary h6 {
-  color: #004BA2
+  color: #006133
 ;
 }
 main .main-row.row-tertiary {
-  background-color: #EF6701
+  background-color: #FFD218
 ;
-  color: #004BA2
+  color: #006133
 ;
 }
 main .main-row.row-tertiary h1, main .main-row.row-tertiary h2, main .main-row.row-tertiary h3, main .main-row.row-tertiary h4, main .main-row.row-tertiary h5, main .main-row.row-tertiary h6 {
@@ -225,7 +242,7 @@ main .main-row.row-white {
   background-color: white;
 }
 main .main-row.row-white h1, main .main-row.row-white h2, main .main-row.row-white h3, main .main-row.row-white h4, main .main-row.row-white h5, main .main-row.row-white h6 {
-  color: #004BA2
+  color: #006133
 ;
 }
 main .enroll, main .introduction, main .program {
@@ -246,7 +263,7 @@ main .enroll {
 main .enroll .enroll-text {
   font-size: 30px;
   text-transform: uppercase;
-  color: #004BA2
+  color: #006133
 ;
 }
 @media (max-width: 700px) {
@@ -266,7 +283,7 @@ main .enroll .enroll-text {
   }
 }
 main .enroll .enroll-button {
-  background: #004BA2
+  background: #006133
 ;
   color: #fff
 ;
@@ -369,7 +386,7 @@ footer p {
   font-size: 12px;
 }
 footer a {
-  color: #EF6701
+  color: #fff
 ;
   text-decoration: none;
 }
@@ -383,21 +400,21 @@ footer .footer-row {
   padding: 10px;
 }
 footer .footer-row.row-primary {
-  background-color: #004BA2
+  background-color: #006133
 ;
-  color: #EF6701
+  color: #fff
 ;
 }
 footer .footer-row.row-secondary {
   background-color: #fff
 ;
-  color: #EF6701
+  color: #AE0035
 ;
 }
 footer .footer-row.row-tertiary {
-  background-color: #EF6701
+  background-color: #FFD218
 ;
-  color: #004BA2
+  color: #006133
 ;
 }
 footer .footer-row.row-white {
@@ -417,6 +434,7 @@ footer .footer-association .association-website {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 footer .footer-association .association-logo {
   max-height: 150px;
