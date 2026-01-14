@@ -1,4 +1,18 @@
-body {
+/*geel: #F6D045*/
+/*rood: #DC6468*/
+/*blauw: #77A4B9*/
+/*groen: #AFBF73*/
+@font-face{
+    font-family: "Lovelo";
+    src: url("../fonts/lovelo_black.otf");
+}
+@font-face{
+    font-family: "Open-Sans";
+    src: url("../fonts/OpenSans.ttf");
+}
+body{
+    background: #F6D045;
+    font-family: Open-Sans;
   margin: 0;
   margin-bottom: 80px;
   font-family: "Poppins", sans-serif;
@@ -48,7 +62,8 @@ main .main-row.row-secondary {
   color: #77A4B9;
 }
 main .main-row.row-secondary h1, main .main-row.row-secondary h2, main .main-row.row-secondary h3, main .main-row.row-secondary h4, main .main-row.row-secondary h5, main .main-row.row-secondary h6 {
-  color: #F6D045;
+  color: #F6D045
+;
 }
 
 main .program {
