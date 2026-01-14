@@ -58,6 +58,19 @@ h6 {
     font-family: Lovelo;
 }
 
+header {
+    height: calc(100vh - 80px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-logo {
+    height: 70%;
+}
+
 main .main-row {
     display: flex;
     flex-direction: row;
