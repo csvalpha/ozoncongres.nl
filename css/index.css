@@ -2,110 +2,149 @@
 /*rood: #DC6468*/
 /*blauw: #77A4B9*/
 /*groen: #AFBF73*/
-@font-face{
+@font-face {
     font-family: "Lovelo";
     src: url("../fonts/lovelo_black.otf");
 }
-@font-face{
+
+@font-face {
     font-family: "Open-Sans";
     src: url("../fonts/OpenSans.ttf");
 }
-body{
+
+body {
     background: #F6D045;
     font-family: Open-Sans;
-  margin: 0;
-  margin-bottom: 80px;
-  font-family: "Poppins", sans-serif;
-  color: #fff
-;
-  overflow-x: hidden;
-  background-color: #006133
-;
+    margin: 0;
+    margin-bottom: 80px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    background-color: #006133;
 }
 
-p, ul, ol, i, b {
-  font-size: 20px;
+p,
+ul,
+ol,
+i,
+b {
+    font-size: 20px;
 }
 
 @media (max-width: 700px) {
-  p, ul, ol, i, b {
-    font-size: 15px;
-  }
+
+    p,
+    ul,
+    ol,
+    i,
+    b {
+        font-size: 15px;
+    }
 }
 
-main .enroll, main .introduction, main .program , main .spreker, main .activities {
-  max-width: 900px;
-  flex-grow: 1;
+main .enroll,
+main .introduction,
+main .program,
+main .spreker,
+main .activities {
+    max-width: 900px;
+    flex-grow: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 2px;
-  text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 main .main-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
 }
+
 main .main-row.row-primary {
-  background-color: #F6D045;
-  color: #fff;
+    background-color: #F6D045;
+    color: #fff;
 }
-main .main-row.row-primary h1, main .main-row.row-primary h2, main .main-row.row-primary h3, main .main-row.row-primary h4, main .main-row.row-primary h5, main .main-row.row-primary h6 {
-  color: #fff;
+
+main .main-row.row-primary h1,
+main .main-row.row-primary h2,
+main .main-row.row-primary h3,
+main .main-row.row-primary h4,
+main .main-row.row-primary h5,
+main .main-row.row-primary h6 {
+    color: #fff;
 }
+
 main .main-row.row-secondary {
-  background-color: #fff;
-  color: #77A4B9;
+    background-color: #fff;
+    color: #77A4B9;
 }
-main .main-row.row-secondary h1, main .main-row.row-secondary h2, main .main-row.row-secondary h3, main .main-row.row-secondary h4, main .main-row.row-secondary h5, main .main-row.row-secondary h6 {
-  color: #F6D045
-;
+
+main .main-row.row-secondary h1,
+main .main-row.row-secondary h2,
+main .main-row.row-secondary h3,
+main .main-row.row-secondary h4,
+main .main-row.row-secondary h5,
+main .main-row.row-secondary h6 {
+    color: #F6D045;
 }
 
 main .program {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 main .program .program-schedule {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
 }
+
 main .program .program-schedule .program-schedule-day {
-  flex-basis: 33.3333333333%;
-  display: flex;
-  flex-direction: column;
+    flex-basis: 33.3333333333%;
+    display: flex;
+    flex-direction: column;
 }
+
 @media (max-width: 750px) {
-  main .program .program-schedule .program-schedule-day {
-    flex-basis: 50%;
-  }
+    main .program .program-schedule .program-schedule-day {
+        flex-basis: 50%;
+    }
 }
+
 @media (max-width: 500px) {
-  main .program .program-schedule .program-schedule-day {
-    flex-basis: 100%;
-  }
+    main .program .program-schedule .program-schedule-day {
+        flex-basis: 100%;
+    }
 }
+
 main .program .program-schedule .program-schedule-day ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
 main .program .program-schedule .program-schedule-day ul li {
-  display: flex;
-  justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
+
 main .program .program-schedule .program-schedule-day ul li span {
-  flex-grow: 1;
+    flex-grow: 1;
 }
+
 main .program .program-schedule .program-schedule-day ul li span.time {
-  padding-right: 10px;
-  flex-grow: 0;
+    padding-right: 10px;
+    flex-grow: 0;
 }
