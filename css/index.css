@@ -17,10 +17,8 @@ body {
     font-family: Open-Sans;
     margin: 0;
     margin-bottom: 80px;
-    font-family: "Poppins", sans-serif;
     color: #fff;
     overflow-x: hidden;
-    background-color: #006133;
 }
 
 p,
@@ -59,6 +57,7 @@ h5,
 h6 {
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-family: Lovelo;
 }
 
 main .main-row {
