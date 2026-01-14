@@ -16,7 +16,6 @@ body {
     background: #F6D045;
     font-family: Open-Sans;
     margin: 0;
-    margin-bottom: 80px;
     color: #fff;
     overflow-x: hidden;
 }
@@ -55,7 +54,6 @@ h3,
 h4,
 h5,
 h6 {
-    letter-spacing: 2px;
     text-transform: uppercase;
     font-family: Lovelo;
 }
@@ -126,6 +124,11 @@ main .program .program-schedule .program-schedule-day {
     }
 }
 
+main .program .program-schedule .program-schedule-day b {
+    text-transform: uppercase;
+    font-family: Lovelo;
+}
+
 main .program .program-schedule .program-schedule-day ul {
     list-style: none;
     padding: 0;
@@ -146,4 +149,53 @@ main .program .program-schedule .program-schedule-day ul li span {
 main .program .program-schedule .program-schedule-day ul li span.time {
     padding-right: 10px;
     flex-grow: 0;
+}
+
+
+footer .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+footer .footer-row.row-primary{
+    background-color: #F6D045;
+    color: #fff;
+}
+
+
+footer .footer-other {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-other .footer-other-content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+footer .footer-other .footer-other-content * {
+  flex-grow: 1;
+  flex-basis: 50%;
+  text-align: center;
+  color: #fff;
+  font-size:14px;
+}
+@media (max-width: 600px) {
+  footer .footer-other .footer-other-content * {
+    flex-basis: 100%;
+  }
+}
+
+footer .footer-other .footer-other-content a {
+    text-decoration: none;
+}
+
+footer .footer-other .footer-other-content a:hover {
+    text-decoration: underline;
 }
