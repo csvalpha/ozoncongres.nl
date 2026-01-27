@@ -38,16 +38,7 @@ b {
         font-size: 15px;
     }
 }
-
-main .enroll,
-main .introduction,
-main .program,
-main .spreker,
-main .activities {
-    max-width: 900px;
-    flex-grow: 1;
-}
-
+a,
 h1,
 h2,
 h3,
@@ -57,9 +48,12 @@ h6 {
     text-transform: uppercase;
     font-family: Lovelo;
 }
+a, h1{
+    font-size: 40px;
+}
 
 header {
-    height: calc(100vh - 80px);
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -68,7 +62,55 @@ header {
 }
 
 header .header-logo {
-    height: 70%;
+    height: 70vh;
+}
+
+header .text{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+header .title-row{
+    width: 80%;
+    background-color:  #AFBF73;
+    padding-left: 15px;
+}
+header .title{
+    margin: 0;
+}
+header .subtitle-row{
+    width: 90%;
+    background-color:  #77A4B9;
+    padding-left: 15px;
+}
+header .subtitle{
+    margin: 0;
+}
+main .enroll-row{
+    width: 100%;
+    background-color:  #DC6468;
+    margin-top: 50px;
+    padding-left: 15px;
+    position: sticky;
+    top: 0; 
+}
+main .enroll{
+    margin: 0;
+}
+main .enroll-button{
+    background: white;
+}
+
+
+main .introduction,
+main .program,
+main .spreker,
+main .activities {
+    max-width: 900px;
+    flex-grow: 1;
 }
 
 main .main-row {
