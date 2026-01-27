@@ -26,19 +26,11 @@ ol,
 i,
 b {
     font-size: 20px;
+    position: relative;
+    z-index: 10;
 }
 
-@media (max-width: 700px) {
-
-    p,
-    ul,
-    ol,
-    i,
-    b {
-        font-size: 15px;
-    }
-}
-a,
+#button,
 h1,
 h2,
 h3,
@@ -49,16 +41,32 @@ h6 {
     font-family: Lovelo;
 }
 a, h1{
-    font-size: 40px;
+    font-size: 50px;
+    text-decoration: none;
+}
+@media (max-width: 700px) {
+
+    p,
+    ul,
+    ol,
+    i,
+    b {
+        font-size: 15px;
+    }
+    a, h1{
+    font-size: 30px;
+    text-decoration: none;
+}
 }
 
 header {
-    height: 100vh;
+    background: #F6D045;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    z-index: 15;
 }
 
 header .header-logo {
@@ -89,21 +97,45 @@ header .subtitle-row{
 header .subtitle{
     margin: 0;
 }
-main .enroll-row{
+.enroll-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     background-color:  #DC6468;
-    margin-top: 50px;
+    margin-top: 40px;
     padding-left: 15px;
-    position: sticky;
-    top: 0; 
+    align-self: flex-start;
+    top: 15px;
 }
-main .enroll{
+.enroll{
     margin: 0;
+    width: calc(90vw - 320px);
 }
-main .enroll-button{
+@media (max-width: 700px) {
+    .enroll {
+        width: calc(90vw - 200px);
+    }
+}
+.enroll-button{
     background: white;
+    position: absolute;
+    padding: 10px;
+    right: 5vw;
+}
+.enroll-button a{
+    color: #DC6468;
 }
 
+.red-bar {
+    width: 8vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    right: 10vw;
+    background: #DC6468;
+    z-index: 0;
+}
 
 main .introduction,
 main .program,
@@ -206,7 +238,11 @@ main .program .program-schedule .program-schedule-day ul li span.time {
     flex-grow: 0;
 }
 
-
+footer{
+    background: #F6D045;
+    z-index: 20;
+    position: relative;
+}
 footer .footer-row {
     display: flex;
     flex-direction: row;
@@ -219,7 +255,6 @@ footer .footer-row.row-primary{
     background-color: #F6D045;
     color: #fff;
 }
-
 
 footer .footer-other {
   display: flex;
